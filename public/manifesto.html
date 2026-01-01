@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manifesto - GenMave</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            color: #2D3142;
+            background: #FDFAF6;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 0 2rem;
+            border-bottom: 2px solid #81B29A;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #2D3142;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: #81B29A;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        h2 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #81B29A;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #F4F1DE;
+        }
+
+        h3 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: #2D3142;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .highlight {
+            background: #F4F1DE;
+            padding: 1.5rem;
+            border-left: 4px solid #E07A5F;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        .stat-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin: 1.5rem 0;
+        }
+
+        .stat-box strong {
+            color: #E07A5F;
+            font-size: 1.2rem;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            font-size: 1.05rem;
+        }
+
+        .check-list {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .check-list li:before {
+            content: "✅ ";
+            margin-right: 0.5rem;
+        }
+
+        .cross-list {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .cross-list li:before {
+            content: "❌ ";
+            margin-right: 0.5rem;
+        }
+
+        .principle-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin: 1.5rem 0;
+            border-top: 4px solid #81B29A;
+        }
+
+        .principle-card h3 {
+            margin-top: 0;
+            color: #81B29A;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.15rem;
+            color: #81B29A;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin: 2rem 0;
+            border-top: 2px solid #F4F1DE;
+            border-bottom: 2px solid #F4F1DE;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #81B29A 0%, #2A9D8F 100%);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            text-align: center;
+            margin: 3rem 0;
+            box-shadow: 0 4px 16px rgba(129, 178, 154, 0.3);
+        }
+
+        .cta-box h2 {
+            color: white;
+            border: none;
+            margin: 0 0 1rem 0;
+        }
+
+        .cta-box p {
+            font-size: 1.15rem;
+            margin-bottom: 0;
+        }
+
+        .footer-note {
+            text-align: center;
+            padding: 2rem 0;
+            color: #81B29A;
+            font-size: 0.95rem;
+            border-top: 1px solid #F4F1DE;
+            margin-top: 3rem;
+        }
+
+        .version {
+            text-align: center;
+            color: #81B29A;
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 1.5rem 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            .hero {
+                padding: 2rem 0 1.5rem;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .cta-box {
+                background: #81B29A;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>MANIFESTO</h1>
+            <p class="subtitle">Ruang Bertumbuh untuk Gen Z yang Mencari Diri</p>
+        </div>
+
+        <section>
+            <h2>KENAPA INI ADA</h2>
+            
+            <div class="stat-box">
+                <p><strong>48%</strong> dari kita feeling lost hampir setiap hari.</p>
+                <p><strong>72%</strong> terus ngebanding-bandingin diri dengan orang lain.</p>
+                <p><strong>76%</strong> scroll sosmed berjam-jam, lalu merasa kosong, insecure, guilty.</p>
+            </div>
+
+            <p>Kita capek.</p>
+            <p>Capek perform. Capek flex. Capek pura-pura.</p>
+            <p>Capek algoritma yang eksploitasi keresahan kita untuk engagement.</p>
+            <p>Capek platform yang bilang "be yourself" tapi sebenarnya jual "be like them".</p>
+            
+            <div class="highlight">
+                <strong>Ini harus berhenti.</strong>
+            </div>
+        </section>
+
+        <section>
+            <h2>APA YANG KITA PERCAYA</h2>
+
+            <div class="principle-card">
+                <h3>1. Manusia butuh ruang untuk bercermin, bukan panggung untuk perform.</h3>
+                <p>Kamu nggak perlu pamer achievement untuk valid.</p>
+                <p>Kamu nggak perlu viral untuk berharga.</p>
+                <p>Kamu nggak perlu follower untuk punya suara.</p>
+                <p><strong>Kamu cukup dengan jadi kamu.</strong></p>
+            </div>
+
+            <div class="principle-card">
+                <h3>2. Kejernihan hidup lebih berharga dari viral sejenak.</h3>
+                <p>1 juta views tapi hidup nggak jelas? Kosong.</p>
+                <p>10 likes tapi kamu paham arah hidupmu? Berharga.</p>
+                <p><strong>Presence > Performance</strong><br>
+                <strong>Clarity > Virality</strong></p>
+            </div>
+
+            <div class="principle-card">
+                <h3>3. Komunitas sejati adalah tempat kamu boleh diam—dan itu oke.</h3>
+                <p>Komunitas bukan tempat kamu harus selalu contribute.</p>
+                <p>Komunitas bukan tempat kamu harus selalu terlihat produktif.</p>
+                <p>Kadang kamu cuma perlu ada. Denger. Diam.</p>
+                <p><strong>Dan itu sudah cukup.</strong></p>
+            </div>
+
+            <div class="principle-card">
+                <h3>4. Teknologi seharusnya menemani, bukan menentukan hidup.</h3>
+                <p>AI bisa kasih rekomendasi. Tapi keputusan akhir tetap di tanganmu.</p>
+                <p>Platform bisa kasih insight. Tapi arah hidupmu ya kamu yang tentukan.</p>
+                <p><strong>Kita tools, bukan boss.</strong></p>
+            </div>
+
+            <div class="principle-card">
+                <h3>5. Kebingungan itu normal. Lost itu manusiawi.</h3>
+                <p>Kamu nggak broken karena nggak tau mau ngapain.</p>
+                <p>Kamu nggak gagal karena belum nemu passion.</p>
+                <p>Kamu nggak lemah karena sering bingung.</p>
+                <p><strong>Kamu cuma manusia yang sedang bertumbuh.</strong></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>APA YANG KITA TOLAK</h2>
+            <ul class="cross-list">
+                <li><strong>Algoritma yang eksploitasi attention</strong><br>Bukan infinite scroll. Bukan dopamine trap.</li>
+                <li><strong>Metrik yang ukur popularitas, bukan pertumbuhan</strong><br>Bukan likes count. Bukan follower race.</li>
+                <li><strong>Konten yang ciptakan FOMO dan perbandingan sosial</strong><br>Bukan highlight reel. Bukan flex culture.</li>
+                <li><strong>Platform yang klaim "fix your life" tapi sebenarnya jual data</strong><br>Bukan jualan harapan palsu. Bukan eksploitasi keresahan.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>INI YANG KITA TAWARKAN</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin: 1.5rem 0;"><strong>Bukan sosmed lain. Tapi ruang bertumbuh.</strong></p>
+
+            <h3>1. PSIKOTES REFLEKTIF</h3>
+            <p>Bukan untuk label kamu ("kamu tipe X").</p>
+            <p>Tapi untuk bantu kamu bercermin:</p>
+            <ul>
+                <li>Kenapa kamu sering ngebanding-bandingin diri?</li>
+                <li>Apa yang bikin kamu "hilang"?</li>
+                <li>Gimana cara kamu belajar paling efektif?</li>
+                <li>Apa yang sebenarnya penting buat kamu?</li>
+            </ul>
+            <p><strong>Output: Personal compass—bukan diagnosis, tapi cermin.</strong></p>
+
+            <h3>2. JURNAL PRIBADI</h3>
+            <p>Ruang sunyi tanpa audience. Nggak ada yang baca kecuali kamu.</p>
+            <p>Nggak ada judgement. Nggak ada tekanan. Tulis perasaan apa adanya.</p>
+            <p><strong>Ini space-mu untuk jujur tanpa filter.</strong></p>
+
+            <h3>3. FEED TERBATAS</h3>
+            <p>Cuma 10 konten per hari. Nggak ada infinite scroll.</p>
+            <p>Nggak ada "just one more video".</p>
+            <p><strong>Selesai? Ya selesai. Hidup dilanjut.</strong></p>
+
+            <h3>4. LINGKAR KECIL</h3>
+            <p>Max 7-10 orang. Teman yang kamu kenal (invitation-only).</p>
+            <p>Nggak ada stranger random. Nggak ada kompetisi. Nggak ada flexing.</p>
+            <p><strong>Cuma support, denger, dan menemani.</strong></p>
+
+            <h3>5. SKILL EXPLORATION</h3>
+            <p>Bukan "master coding in 30 days".</p>
+            <p>Tapi "coba 7 hari dulu, cocok nggak?"</p>
+            <p>Fokus: <strong>Sampling, bukan commitment.</strong></p>
+            <p>Nggak cocok? Ya sudah, coba yang lain.</p>
+
+            <h3>6. RITUAL MINGGUAN</h3>
+            <p>Bukan daily addiction. Tapi weekly reflection.</p>
+            <p>Setiap Minggu: "Apa yang kamu coba minggu ini?" "Apa yang kamu grateful?" "Apa yang pengen kamu ubah?"</p>
+            <p><strong>Presence over frequency.</strong></p>
+        </section>
+
+        <section>
+            <h2>JANJI KAMI PADA KAMU</h2>
+
+            <h3>Tentang Data & Privacy:</h3>
+            <ul class="check-list">
+                <li><strong>Kami tidak akan jual data kamu.</strong><br>Titik. Nggak peduli seberapa menggiurkan tawaran iklan.</li>
+                <li><strong>Kami tidak akan track aktivitas kamu untuk profiling.</strong><br>Algoritma kita untuk bantu kamu, bukan eksploitasi kamu.</li>
+                <li><strong>Kami transparan soal apa yang kami collect.</strong><br>Lihat Privacy Policy kapan aja. Plain language, bukan legal jargon.</li>
+            </ul>
+
+            <h3>Tentang Konten & Algoritma:</h3>
+            <ul class="check-list">
+                <li><strong>Kami tidak akan paksa kamu engage setiap hari.</strong><br>Platform ini nggak akan guilt-trip kamu kalau nggak buka 3 hari.</li>
+                <li><strong>Kami tidak akan bikin addictive by design.</strong><br>Nggak ada notif spam. Nggak ada "streak" palsu. Nggak ada manipulation.</li>
+                <li><strong>Kami kasih kontrol ke kamu.</strong><br>Feed mau lihat apa hari ini? Kamu yang pilih: explore, reflect, atau connect.</li>
+            </ul>
+
+            <h3>Tentang Komunitas:</h3>
+            <ul class="check-list">
+                <li><strong>Kami prioritaskan keamanan di atas growth.</strong><br>Better 1,000 users yang safe daripada 100,000 users yang toxic.</li>
+                <li><strong>Kami zero-tolerance untuk judgement & harassment.</strong><br>First offense: warning. Second offense: ban. No exception.</li>
+                <li><strong>Kami nggak akan judge arah hidup yang kamu pilih.</strong><br>Mau jadi seniman? Oke. Mau jadi karyawan? Oke. Mau gap year? Oke. Semua valid.</li>
+            </ul>
+
+            <h3>Tentang Monetisasi:</h3>
+            <ul class="check-list">
+                <li><strong>Core features akan tetap gratis selamanya.</strong><br>Psikotes, journal, komunitas kecil—nggak akan pernah di-paywall.</li>
+                <li><strong>Kalau ada fitur berbayar, itu untuk pendampingan lebih dalam.</strong><br>Bukan karena kamu "kurang". Tapi karena kamu mau level up.</li>
+                <li><strong>Kami nggak akan paksa kamu bayar.</strong><br>Nggak ada fear-based upselling. Nggak ada "you're not enough without premium".</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>METRIK KESUKSESAN KAMI</h2>
+            
+            <h3>Bukan:</h3>
+            <ul class="cross-list">
+                <li>Daily Active Users (DAU)</li>
+                <li>Time spent on app</li>
+                <li>Engagement rate</li>
+                <li>Virality coefficient</li>
+            </ul>
+
+            <h3>Tapi:</h3>
+            <ul class="check-list">
+                <li><strong>Clarity Score Improvement</strong><br>Berapa % user yang merasa lebih paham arah hidupnya setelah 3 bulan?</li>
+                <li><strong>Toxic Social Media Reduction</strong><br>Berapa jam user kurangin waktu di TikTok/IG setelah pakai platform kita?</li>
+                <li><strong>Conscious Decision Making</strong><br>Berapa % user yang bisa ambil keputusan hidup dengan lebih sadar?</li>
+                <li><strong>Silent Retention</strong><br>Berapa user yang balik saat mereka butuh, meski nggak buka setiap hari?</li>
+                <li><strong>Community Health</strong><br>Berapa % interaksi yang supportive (bukan toxic)?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>INI BUKAN</h2>
+            <ul class="cross-list">
+                <li><strong>Sosial media lain dengan baju baru</strong><br>Kita fundamentally different. Bukan cuma UI/UX cosmetic.</li>
+                <li><strong>Produktivitas app yang guilt-trip kamu</strong><br>Kita nggak akan bilang "kamu belum journaling hari ini" dengan notif agresif.</li>
+                <li><strong>Terapi digital</strong><br>Kita bukan pengganti terapis. Kalau kamu butuh help profesional, please cari therapist.</li>
+                <li><strong>Solusi instan untuk quarter-life crisis</strong><br>Kita nggak jual "fix your life in 7 days". Bertumbuh itu proses, bukan magic.</li>
+                <li><strong>Platform untuk semua orang</strong><br>Kalau kamu suka infinite scroll, suka likes count, suka flexing—this is not for you. Dan itu oke.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>INI ADALAH</h2>
+            <ul class="check-list">
+                <li><strong>Teman digital yang nemenin kamu bertumbuh</strong><br>Bukan guru. Bukan boss. Tapi teman.</li>
+                <li><strong>Ruang refleksi yang kamu bisa kembali saat butuh</strong><br>Kadang kamu nggak perlu buka 30 hari. Tapi pas kamu lost, kamu tau kemana.</li>
+                <li><strong>Komunitas yang tumbuh pelan tapi tulus</strong><br>Bukan viral growth. Tapi organic, genuine, word-of-mouth.</li>
+                <li><strong>Eksperimen panjang untuk jawab: "Bisa nggak platform tech yang ethical?"</strong><br>Kita percaya bisa. Kita mau buktiin.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>UNTUK SIAPA INI</h2>
+            
+            <h3>Ini untuk kamu yang:</h3>
+            <ul class="check-list">
+                <li>Sering feeling lost, nggak tau mau ngapain di hidup</li>
+                <li>Capek ngebanding-bandingin diri sama orang lain</li>
+                <li>Scroll sosmed lama tapi merasa kosong setelahnya</li>
+                <li>Pengen eksplorasi skill tapi takut salah pilih</li>
+                <li>Butuh komunitas yang aman, bukan performatif</li>
+                <li>Pengen paham diri sendiri lebih dalam</li>
+            </ul>
+
+            <h3>Ini BUKAN untuk kamu yang:</h3>
+            <ul class="cross-list">
+                <li>Cari platform untuk viral / jadi influencer</li>
+                <li>Mau flexing achievement / compete with others</li>
+                <li>Expect instant fix untuk semua masalah hidup</li>
+                <li>Nggak mau introspeksi (cuma mau distraction)</li>
+            </ul>
+        </section>
+
+        <div class="quote">
+            "Platform yang sukses adalah platform yang eventually nggak dibutuhin lagi."
+        </div>
+
+        <section>
+            <h2>PENUTUP: INI BUKAN CUMA PLATFORM</h2>
+            
+            <p>Ini gerakan.</p>
+            <p>Gerakan untuk reject toxic productivity.</p>
+            <p>Gerakan untuk reject comparison culture.</p>
+            <p>Gerakan untuk reject attention economy.</p>
+            
+            <p>Gerakan untuk reclaim:</p>
+            <ul>
+                <li>Our time</li>
+                <li>Our attention</li>
+                <li>Our self-worth</li>
+                <li>Our clarity</li>
+            </ul>
+
+            <p style="margin-top: 2rem;"><strong>Ini bukan "kita vs mereka".</strong></p>
+            <p><strong>Ini "kita untuk kita".</strong></p>
+        </section>
+
+        <div class="cta-box">
+            <h2>AJAKAN</h2>
+            <p>Kalau kamu capek perform, capek compare, capek scroll tanpa arah—</p>
+            <p><strong>Kamu nggak sendirian.</strong></p>
+            <p style="margin-top: 1.5rem;">Bukan tempat yang sempurna.<br>
+            Bukan tempat yang punya semua jawaban.<br>
+            Tapi tempat yang <strong>care</strong>. Tempat yang <strong>safe</strong>. Tempat yang <strong>honest</strong>.</p>
+            <p style="margin-top: 1.5rem; font-size: 1.3rem;"><strong>Tempat untuk kamu jadi kamu.</strong></p>
+        </div>
+
+        <section>
+            <h2>KOMITMEN BUILDER</h2>
+            <p>Sebagai yang bikin ini, gue berkomitmen:</p>
+            <ul class="check-list">
+                <li><strong>Build dengan transparency</strong><br>Share progress, share failures, share learnings.</li>
+                <li><strong>Listen lebih banyak dari talk</strong><br>User yang paling tau apa yang mereka butuhin.</li>
+                <li><strong>Iterate dengan empathy</strong><br>Setiap keputusan produk ditanya: "Ini bantu user atau eksploitasi user?"</li>
+                <li><strong>Stay independent</strong><br>Nggak akan jual ke big tech yang compromise values.</li>
+                <li><strong>Admit when wrong</strong><br>Kalau ada keputusan yang salah, gue akan publicly acknowledge & fix.</li>
+            </ul>
+            <p style="margin-top: 2rem;"><strong>Ini marathon, bukan sprint.</strong></p>
+            <p><strong>Gue di sini untuk jangka panjang.</strong></p>
+        </section>
+
+        <section>
+            <h2>LAST WORDS</h2>
+            <p><strong>Platform ini bukan solusi untuk semua masalah hidupmu.</strong></p>
+            <p><strong>Tapi platform ini bisa jadi teman di perjalanan kamu nemuin solusi itu.</strong></p>
+            <p style="margin-top: 2rem;"><strong>Kamu yang jawab pertanyaan hidup kamu.</strong></p>
+            <p><strong>Kita cuma kasih ruang untuk kamu bertanya.</strong></p>
+        </section>
+
+        <div class="quote" style="font-size: 1.5rem; font-weight: 700; color: #81B29A;">
+            Presence > Performance<br>
+            Clarity > Virality<br>
+            Diri Sendiri > Standar Orang Lain
+        </div>
+
+        <div class="footer-note">
+            <p style="font-size: 1.2rem; margin-bottom: 1rem;"><strong>Selamat datang di ruang bertumbuhmu.</strong></p>
+            <p style="font-size: 1.3rem; font-weight: 700; color: #2D3142;">GenMave</p>
+            <p style="font-style: italic; margin-top: 1rem;">Dibuat dengan niat: nemenin Gen Z nemuin diri mereka lagi.</p>
+        </div>
+
+        <div class="version">
+            <p>v1.0 — December 2025</p>
+            <p>Manifesto ini hidup. Akan diupdate berdasarkan pembelajaran & feedback komunitas.</p>
+        </div>
+    </div>
+</body>
+</html>
