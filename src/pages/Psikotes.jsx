@@ -162,7 +162,7 @@ export default function Psikotes() {
         name: 'UI/UX Design',
         match: 87,
         reason: 'Visual thinking + creative exploration',
-        slug: 'uiux'
+        slug: 'uiux-design'
       });
     }
 
@@ -171,7 +171,7 @@ export default function Psikotes() {
         name: 'Web Development',
         match: 85,
         reason: 'Practical, immediate feedback, clear path',
-        slug: 'webdev'
+        slug: 'web-development'
       });
     }
 
@@ -180,7 +180,7 @@ export default function Psikotes() {
         name: 'Creative Writing',
         match: 82,
         reason: 'Deep reflection, self-expression',
-        slug: 'writing'
+        slug: 'content-writing'
       });
     }
 
@@ -189,7 +189,7 @@ export default function Psikotes() {
         name: 'Podcasting',
         match: 80,
         reason: 'Social connection through storytelling',
-        slug: 'podcasting'
+        slug: 'content-writing'
       });
     }
 
@@ -199,7 +199,7 @@ export default function Psikotes() {
         name: 'Content Creation',
         match: 75,
         reason: 'Self-expression and creativity',
-        slug: 'content'
+        slug: 'content-writing'
       });
     }
 

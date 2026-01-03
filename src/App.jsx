@@ -56,6 +56,16 @@ function App() {
               <SkillPathway />
             </ProtectedRoute>
           } />
+          <Route path="/skills" element={
+            <ProtectedRoute>
+              <SkillPathway />
+            </ProtectedRoute>
+          } />
+          <Route path="/skills/:skillId" element={
+            <ProtectedRoute>
+              <SkillChallenge />
+            </ProtectedRoute>
+          } />
           <Route path="/skill-challenge" element={
             <ProtectedRoute>
               <SkillChallenge />
