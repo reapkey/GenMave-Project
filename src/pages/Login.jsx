@@ -21,12 +21,7 @@ export default function Login() {
     const { error } = await signIn(email, password);
 
     if (error) {
-      // Handle different types of auth errors
-      if (error.message.includes('email not confirmed') || error.message.includes('Email not confirmed')) {
-        setError('Email belum terverifikasi. Silakan cek email Anda untuk link verifikasi.');
-      } else {
-        setError('Email atau password salah. Coba lagi?');
-      }
+      setError('Email atau password salah. Coba lagi?');
       setLoading(false);
     } else {
       const redirectPath = localStorage.getItem('redirectPath') || '/dashboard';
