@@ -45,7 +45,17 @@ export default function SignUp() {
       }
       setLoading(false);
     } else {
-      navigate('/psikotes');
+      // Check if user needs to verify email
+      if (data.user && data.user.email_confirmed_at === null) {
+        // Email not verified yet, show message and redirect to login
+        setError('Akun berhasil dibuat! Silakan cek email Anda untuk verifikasi sebelum login.');
+        setTimeout(() => {
+          navigate('/login');
+        }, 3000);
+      } else {
+        // Email already verified, proceed to psikotes
+        navigate('/psikotes');
+      }
     }
   };
 
